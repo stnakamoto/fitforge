@@ -1,0 +1,28 @@
+{
+  "short_name": "FitForge",
+  "name": "FitForge - AI Fitness Coach",
+  "description": "Modern health and fitness app with AI coaching, workout plans, and nutrition tracking",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2978FF",
+  "background_color": "#121212",
+  "categories": ["health", "fitness", "lifestyle"],
+  "lang": "en",
+  "scope": "/",
+  "prefer_related_applications": false
+}

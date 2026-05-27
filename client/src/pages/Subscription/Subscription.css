@@ -1,0 +1,382 @@
+.subscription-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subscription-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subscription-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.subscription-header p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.current-plan-info {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  display: inline-block;
+}
+
+.plan-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-size: 16px;
+}
+
+.status-icon {
+  width: 20px;
+  height: 20px;
+  color: #667eea;
+}
+
+.billing-info {
+  color: #666;
+  font-weight: normal;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card.popular {
+  border-color: #667eea;
+  transform: scale(1.05);
+}
+
+.plan-card.current {
+  border-color: #28a745;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.plan-icon-container {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.plan-card.free .plan-icon-container {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+}
+
+.plan-card.premium .plan-icon-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.plan-card.pro .plan-icon-container {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.plan-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.plan-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.currency {
+  font-size: 20px;
+  color: #666;
+}
+
+.amount {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+}
+
+.period {
+  font-size: 16px;
+  color: #666;
+}
+
+.plan-description {
+  color: #666;
+  line-height: 1.5;
+}
+
+.plan-features h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+}
+
+.check-icon {
+  width: 20px;
+  height: 20px;
+  color: #28a745;
+  flex-shrink: 0;
+}
+
+.limitations {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e1e5e9;
+}
+
+.limitations h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.limitations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.limitation-item {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.limitation-item:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ccc;
+}
+
+.plan-action {
+  margin-top: 32px;
+}
+
+.btn-subscribe {
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-subscribe.free {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-subscribe.premium {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-subscribe.pro {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: white;
+}
+
+.btn-subscribe:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-subscribe:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-current {
+  width: 100%;
+  padding: 16px 24px;
+  border: 2px solid #28a745;
+  background: transparent;
+  color: #28a745;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.subscription-faq {
+  margin-bottom: 60px;
+}
+
+.subscription-faq h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.subscription-footer {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid #e1e5e9;
+}
+
+.security-badges {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.badge .badge-icon {
+  width: 16px;
+  height: 16px;
+  color: #28a745;
+}
+
+@media (max-width: 768px) {
+  .subscription-header h1 {
+    font-size: 28px;
+  }
+  
+  .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .plan-card.popular {
+    transform: none;
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .amount {
+    font-size: 36px;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .security-badges {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
